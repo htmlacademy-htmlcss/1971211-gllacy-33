@@ -1,0 +1,142 @@
+@font-face {
+  font-family:"inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family:"inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family:"inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+body{
+  font-family:"inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+  ;
+}
+.navigation-link {
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #2D3440;
+}
+.contacts-phone {
+  line-height: 20px;
+  font-weight: 700;
+  color: #2D3440;
+  text-align: center;
+  text-decoration: none;
+}
+.gift {
+  width: 176px;
+  height: 44px;
+  border-radius: 30px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #2D3440;
+  text-align: center;
+  text-decoration: none;
+  background-color: #FCFCFC;
+}
+.tel{
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  color: #2D3440;;
+}
+.button {
+  font-family: 'inter';
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #FCFCFC;
+  background-color: #FF2F64;
+  width: 152px;
+  height: 44px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+.product-card-subtitle,
+.product-card-img{
+  border-radius: 50%;
+}
+.pagination-link{
+  line-height: 20px;
+  color: #2D3440;
+  text-align: center;
+  text-decoration: none;
+}
+.about{
+  width: 1170px;
+  height: 480px;
+  background-image: url(/images/waffle.png);
+  background-repeat: no-repeat;
+}
+.about div{
+  background-color: #FCFCFC;
+  width: 1122px;
+  height: 432px;
+}
+.news-blog{
+  width: 570px;
+  height: 220px;
+  background: url(/images/sorting.png);
+}
+.news-blog-title{
+  line-height: 20px;
+  color: #565C66;
+}
+.news-mail{
+  width: 570px;
+  height: 220px;
+  background: url(/images/post.jpg);
+  border-radius: 20px;
+}
+.news-mail div{
+  width: 558px;
+  height: 208px;
+  background: #FCFCFC;
+}
+.text-mail{
+  line-height: 22px;
+  color: #565C66;
+}
+.delivery{
+  width: 1170px;
+  height: 534px;
+  background: url(/images/sorting-big.jpg);
+}
+.our-address{
+  width: 1170px;
+  height: 492px;
+  background: url(/images/creamanka.jpg);
+  border-radius: 20px;
+}
+.product-card-title{
+  font-weight: 700;
+  line-height: 24px;
+  color: #2D3440;
+}
+.product-card-subtitle{
+  color: #565C66;
+}
+.product-card-link{
+  text-decoration: none;
+}
+.footer-copy a{
+  color: #2D3440;
+}
