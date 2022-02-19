@@ -19,14 +19,34 @@
   src: url("/fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
+html{
+  height: 100%;
+}
 body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family:"inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #2D3440;
   background-color: #FEAFC3;
-  ;
+}
+.navigation{
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+.navigation-list{
+  margin: 0;
+  padding: 0;
+  width: 521px;
+}
+.navigation-user{
+  width: 403px;
+  margin-left: auto;
 }
 .navigation-link {
   line-height: 20px;
@@ -41,9 +61,16 @@ body{
   text-align: center;
   text-decoration: none;
 }
+.main-container{
+  flex-grow: 1;
+}
+
+.page-container{
+  width: 1170px;
+  margin: 0 auto;
+}
 .gift {
-  width: 176px;
-  height: 44px;
+  padding: 12px 32px 12px 32px;
   border-radius: 30px;
   font-weight: 700;
   line-height: 20px;
@@ -70,9 +97,54 @@ body{
   border-radius: 30px;
   text-decoration: none;
 }
-.product-card-subtitle,
+.pagination-show-more{
+  background-color: #FCFCFC;
+  color: #2D3440;
+}
+.product-card-subtitle{
+  text-align: center;
+}
 .product-card-img{
   border-radius: 50%;
+}
+.product-card{
+  width: 270px;
+  height: 281px;
+  background-color: #FCFCFC;
+  border-radius: 10px;
+  list-style-type:none;
+  margin-top: 91px;
+}
+.product-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.product-list:first-child{
+  margin-right: 0;
+}
+.product-list-catalog{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.product-list-catalog:last-child{
+  margin-bottom: 57px;
+}
+.product-card-title{
+  font-weight: 700;
+  line-height: 24px;
+  color: #2D3440;
+}
+.product-card-subtitle{
+  color: #565C66;
+}
+.product-card-link{
+  text-decoration: none;
 }
 .pagination-link{
   line-height: 20px;
@@ -126,17 +198,24 @@ body{
   background: url(/images/creamanka.jpg);
   border-radius: 20px;
 }
-.product-card-title{
-  font-weight: 700;
-  line-height: 24px;
-  color: #2D3440;
+.paganation-container{
+  display: flex;
+  justify-content: space-between;
 }
-.product-card-subtitle{
-  color: #565C66;
+.pagination{
+  width: 140px;
+  height: 42px;
+  margin-top: 57px;
 }
-.product-card-link{
-  text-decoration: none;
+.page-footer-container{
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
 }
 .footer-copy a{
   color: #2D3440;
+}
+.our-address-form{
+  padding: 12px 32px 12px 32px;
 }
