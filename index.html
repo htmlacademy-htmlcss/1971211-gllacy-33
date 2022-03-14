@@ -7,22 +7,22 @@
   </head>
   <body>
     <header class="page-header">
-      <div>
+      <div class="page-header-container">
         <a href="index.html" class="logo">
           <img src="images/logo.svg" width="137" height="56" alt="логотип Глейси">
         </a>
         <nav class="navigation">
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a href="catalog.html" class="navigation-link">Каталог</a>
-              </li>
-              <li class="navigation-item">
-                <a href="delivery.html" class="navigation-link">Доставка и оплата</a>
-              </li>
-              <li class="navigation-item">
-                <a href="about.html" class="navigation-link">О компании</a>
-              </li>
-            </ul>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a href="catalog.html" class="navigation-link">Каталог</a>
+            </li>
+            <li class="navigation-item">
+              <a href="delivery.html" class="navigation-link">Доставка и оплата</a>
+            </li>
+            <li class="navigation-item">
+              <a href="about.html" class="navigation-link">О компании</a>
+            </li>
+          </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
               <a href="tel:88005558628" class="contacts-phone">+7 800 555-86-28 </a>
@@ -115,7 +115,7 @@
               </a>
               <p class="product-card-subtitle">Сливочное мороженое с малиновым джемом</p>
               <div>
-                <b>310 ₽/кг</b>
+                <b class="product-card-price">310 ₽/кг</b>
                 <a href="#" class="product-card-button button">
                   <img src="/images/icon/cart-lite.svg" width="13" height="13" alt="Купить" class="product-card-button-img">
                 </a>
@@ -128,7 +128,7 @@
               </a>
               <p class="product-card-subtitle">Фисташковый пломбир с кусочками шоколада</p>
               <div>
-                <b>340 ₽/кг</b>
+                <b class="product-card-price">340 ₽/кг</b>
                 <a href="#" class="product-card-button button">
                   <img src="/images/icon/cart-lite.svg" width="13" height="13" alt="Купить" class="product-card-button-img">
                 </a>
@@ -141,7 +141,7 @@
               </a>
               <p class="product-card-subtitle">Крем-брюле с черничным джемом</p>
               <div>
-                <b>330 ₽/кг</b>
+                <b class="product-card-price">330 ₽/кг</b>
                 <a href="#" class="product-card-button button">
                   <img src="/images/icon/cart-lite.svg" width="13" height="13" alt="Купить" class="product-card-button-img">
                 </a>
@@ -154,7 +154,7 @@
               </a>
               <p class="product-card-subtitle">Ванильный пломбир со сладкой посыпкой</p>
               <div>
-                <b>320 ₽/кг</b>
+                <b class="product-card-price">320 ₽/кг</b>
                 <a href="#" class="product-card-button button">
                   <img src="/images/icon/cart-lite.svg" width="13" height="13" alt="Купить" class="product-card-button-img">
                 </a>
@@ -168,29 +168,17 @@
             <h2 class="about-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного   проиводства на развес</h2>
             <h2 class="visually-hidden">Преймущества</h2>
             <ul class="advantages-list">
-              <li class="advantages-item">
-                <p class="advantages-description">
-                  <img src="images/icon/ice-cream.svg" width="48" height="48" alt="собственное производство">
+              <li class="advantages-item advantages-item-one">
                   Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования   и проверенных временем технологий.
-                </p>
               </li>
-              <li class="advantages-item">
-                <p class="advantages-description">
-                  <img src="images/icon/sheet.svg" width="48" height="48" alt="высокое качество">
-                  Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки   произведены из натурального сырья.
-                </p>
-              </li>
-              <li class="advantages-item">
-                <p class="advantages-description">
-                  <img src="images/icon/cow.svg" width="48" height="48" alt="закупка у фермеров">
+              <li class="advantages-item advantages-item-two">
                   Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает  долговременное сотрудничество.
-                </p>
               </li>
-              <li class="advantages-item">
-                <p class="advantages-description">
-                  <img src="images/icon/thermometer.svg" width="48" height="48" alt="термопак">
+              <li class="advantages-item advantages-item-three">
+                Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки   произведены из натурального сырья.
+            </li>
+              <li class="advantages-item advantages-item-for">
                   Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и  позволяет сохранить превосходный вкус.
-                </p>
               </li>
             </ul>
         </div>
@@ -204,7 +192,6 @@
           <div>
             <p class="text-mail">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у  нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="news-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="news-email">Email</label>
               <input class="field" placeholder="email@example.com" type="email" name="news-email" id="news-email" required>
               <button class="button news-button" type="submit">
                 <span>Отправить</span>
@@ -214,28 +201,49 @@
         </div>
       </section>
       <section class="delivery">
-        <h2 class="delivery-item">Доставка любимого мороженого на дом</h2>
-        <p class="delivery-description">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-        <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="delivery-form-date">
-            <label for="delivery-date">Дата</label>
-            <input type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
-          </p>
-          <p class="delivery-form-phone">
-            <label for="delivery-phone">Телефон</label>
-            <input type="text" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
-          </p>
-          <p class="delivery-form-adress">
-            <label for="delivery-adress">Телефон</label>
-            <input type="text" id="delivery-adress" name="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8">
-          </p>
-          <button class="button" type="submit">Отправить</button>
-        </form>
+        <div class="delivery-body">
+          <div class="delivery-text">
+            <h2 class="delivery-item">Доставка любимого мороженого на дом</h2>
+            <p class="delivery-description">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин?  Закажите  доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+          </div>
+          <div class="delivery-date">
+            <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="delivery-form-grid form-text">
+                <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+              </div>
+              <div class="delivery-form-grid form-date">
+                <p class="delivery-form-date">
+                  <label for="delivery-date-label">
+                    Дата
+                    <img src="/images/icon/i.svg" width="14" height="14">
+                  </label>
+                  <input class="input-date" type="text" id="delivery-date-label" name="delivery-date-label" placeholder="01.04.2020">
+                </p>
+              </div>
+              <div class="delivery-form-grid form-tel">
+                <p class="delivery-form-phone">
+                  <label for="delivery-phone">Телефон</label>
+                  <input class="input-phone" type="text" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
+                </p>
+              </div>
+              <div class="delivery-form-grid form-adress">
+                <p class="delivery-form-adress">
+                  <label for="delivery-adress">
+                    Адрес
+                    <img src="/images/icon/i.svg" width="14" height="14">
+                  </label>
+                  <input class="input-adress" type="text" id="delivery-adress" name="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8">
+                </p>
+              </div>
+              <button class="button form-button" type="submit">Отправить</button>
+            </form>
+          </div>
+      </div>
       </section>
       <section class="our-address">
         <div class="our-address-item">
           <p class="our-address-description">Адрес главного офиса и офлайн-магазина:</p>
-          <adress>наб. реки Карповки, 5 лит П, Санкт-Петербург</adress>
+          <adress class="adress-description">наб. реки Карповки, 5 лит П, Санкт-Петербург</adress>
           <p class="our-address-description">Для заказов по телефону:</p>
           <a href="tel:+78128121212" class="tel">+7 (812) 812-12-12</a>
           <p class="our-address-description">(с 10 до 20 ежедневно)</p>
@@ -277,7 +285,7 @@
           Сделано в
           <a href="https://htmlacademy.ru">.html academy © 2021</a>
         </p>
-     </div>>
+     </div>
     </footer>
   </body>
 </html>
