@@ -217,11 +217,11 @@ body {
   display: block;
   position: relative;
   text-align: start;
-  bottom: 225px;
+  bottom: 233px;
   left: 320px;
 }
 .promo:first-child img {
-  bottom: 216px;
+  bottom: 224px;
 }
 .page-container {
   width: 1170px;
