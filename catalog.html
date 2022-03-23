@@ -33,18 +33,62 @@
             <a href="#" class="navigation-link navigation-link-user search">
               <img src="./images/icon/search.svg" width="15px" height="15px" alt="Поиск">
               <span class="visually-hidden">Поиск</span>
+              <div class="search-hover">
+                <input class="search-hover-in" type="text" placeholder="Поиск по сайту">
+              </div>
             </a>
           </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link navigation-link-user">
+          <li class="navigation-item lk-item">
+            <a href="#" class="navigation-link navigation-link-user lk">
               <img src="./images/icon/in.svg" alt="вход в личный кабинет">
-              Вход
+              <span>Вход</span>
+              <div class="lk-in">
+                <div class="text-lk-div">
+                  <p class="text-lk">Личный кабинет</p>
+                </div>
+                <div class="form-div">
+                  <form class="lk-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <input class="lk-hover-email" type="email" placeholder="email@example.com">
+                    <input class="lk-hover-pass" type="password" placeholder="Пароль">
+                    <button class="button form-button" type="submit">Отправить</button>
+                    <div class="reg-div">
+                      <a class="rem-pas" href="#">Забыли пароль?</a>
+                      <a class="reg" href="#">Регистрация</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item cart-item">
             <a href="#" class="navigation-link navigation-link-user">
               <img src="./images/icon/cart.svg" alt="Корзина">
-              Пусто
+              <span>2 товара</span>
+              <div class="cart">
+                <p class="cart-text">Корзина</p>
+                <div class="cart-pay">
+                  <div class="raspberry-cart">
+                    <img src="./images/raspberry-cart.jpg" width="46" height="46" alt="Малинка">
+                    <div>
+                      <p class="raspberry-name">Малинка</p>
+                      <p class="raspberry-check">1&nbsp;кг х&nbsp;310&nbsp;₽</p>
+                    </div>
+                    <p class="raspberry-check-calc check">310 ₽</p>
+                  </div>
+                  <div class="babl-gum-cart">
+                    <img src="./images/babl-gum-cart.jpg" width="46" height="46" alt="Бабл-гам">
+                    <div>
+                      <p class="babl-gum-name">Бабл-гам</p>
+                      <p class="babl-gum-check">1,5&nbsp;кг х&nbsp;320&nbsp;₽</p>
+                    </div>
+                    <p class="babl-gum-check-calc check">480 ₽</p>
+                  </div>
+                </div>
+                <div class="cart-footer">
+                  <button class="button-order" type="submit">Оформить заказ</button>
+                  <p class="order-sum"> Итого: 790 ₽</p>
+                </div>
+              </div>
             </a>
           </li>
         </ul>
@@ -96,46 +140,73 @@
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Жирность:</legend>
           <ul class="catalog-filter-list fat-content">
-            <li class="catalog-filter-item item">
+            <li class="catalog-filter-item">
+              <label class="catalog-filter-item-field" for="catalog-filter-item-zero">
                 <input class="custom-radiobutton" type="radio" name="catalog-filter-fat-content" value="fat-content-zero" id="catalog-filter-item-zero">
-                <label class="catalog-filter-item-field" for="catalog-filter-item-zero">0%</label>
+                <span class="checkmark"></span>
+                0%
+              </label>
             </li>
-            <li class="catalog-filter-item item">
-              <input class="custom-radiobutton" type="radio" name="catalog-filter-fat-content" value="fat-content-ten" id="catalog-filter-item-ten" checked>
-              <label class="catalog-filter-item-field" for="catalog-filter-item-ten">до 10%</label>
+            <li class="catalog-filter-item">
+              <label class="catalog-filter-item-field" for="catalog-filter-item-ten">
+                <input type="radio" name="catalog-filter-fat-content" value="fat-content-ten" id="catalog-filter-item-ten" checked>
+                <span class="checkmark"></span>
+                до 10%
+              </label>
             </li>
-            <li class="catalog-filter-item item">
-              <input class="custom-radiobutton" type="radio" name="catalog-filter-fat-content" value="fat-content-up-to-30" id="catalog-filter-item-up-to-30">
-              <label class="catalog-filter-item-field" for="catalog-filter-item-up-to-30">до 30%</label>
+            <li class="catalog-filter-item">
+              <label class="catalog-filter-item-field" for="catalog-filter-item-thirty">
+                <input type="radio" name="catalog-filter-fat-content" value="fat-content-thirty" id="catalog-filter-item-thirty">
+                <span class="checkmark"></span>
+                до 30%
+              </label>
             </li>
-            <li class="catalog-filter-item item">
-              <input class="custom-radiobutton" type="radio" name="catalog-filter-fat-content" value="fat-content-above-30" id="catalog-filter-item-above-30">
-              <label class="catalog-filter-item-field" for="catalog-filter-item-above-30">свыше 30%</label>
+            <li class="catalog-filter-item">
+              <label class="catalog-filter-item-field" for="catalog-filter-item-more">
+                <input type="radio" name="catalog-filter-fat-content" value="fat-content-more" id="catalog-filter-item-more">
+                <span class="checkmark"></span>
+                свыше 30%
+              </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Наполнители:</legend>
           <ul class="catalog-filter-list checkbox filler-content">
-            <li class="catalog-filter-item item">
-              <input class="custom-checkbox" type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-chocolate" id="catalog-filter-item-chocolate" checked>
-              <label for="catalog-filter-item-chocolate">шоколадные</label>
+            <li class="catalog-filter-item">
+              <label class="catalog-filter-item-checkbox" for="catalog-filter-item-chocolate">
+                <input type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-chocolate" id="catalog-filter-item-chocolate" checked>
+                <span class="custom-checkbox"></span>
+                шоколадные
+              </label>
             </li>
-            <li class="catalog-filter-item item">
-              <input class="custom-checkbox" type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-sugar" id="catalog-filter-item-sugar" checked>
-              <label for="catalog-filter-item-sugar">сахарные посыпки</label>
+            <li class="catalog-filter-item">
+              <label class="catalog-filter-item-checkbox" for="catalog-filter-item-sugar">
+                <input type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-sugar" id="catalog-filter-item-sugar" checked>
+                <span class="custom-checkbox"></span>
+                сахарные посыпки
+              </label>
             </li>
-            <li class="catalog-filter-item item">
-              <input class="custom-checkbox" type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-fruits" id="catalog-filter-item-fruits">
-              <label for="catalog-filter-item-fruits">фрукты</label>
+            <li class="catalog-filter-item">
+              <label class="catalog-filter-item-checkbox" for="catalog-filter-item-fruit">
+                <input type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-fruit" id="catalog-filter-item-fruit">
+                <span class="custom-checkbox"></span>
+                фрукты
+              </label>
             </li>
-            <li class="catalog-filter-item item">
-              <input class="custom-checkbox" type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-syrups" id="catalog-filter-item-syrups">
-              <label for="catalog-filter-item-syrups">сиропы</label>
+            <li class="catalog-filter-item">
+              <label class="catalog-filter-item-checkbox" for="catalog-filter-item-syrups">
+                <input type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-syrups" id="catalog-filter-item-syrups">
+                <span class="custom-checkbox"></span>
+                сиропы
+              </label>
             </li>
-            <li class="catalog-filter-item item">
-              <input class="custom-checkbox" type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-jams" id="catalog-filter-item-jams">
-              <label for="catalog-filter-item-jams">джемы</label>
+            <li class="catalog-filter-item">
+              <label class="catalog-filter-item-checkbox" for="catalog-filter-item-jam">
+                <input type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-jam" id="catalog-filter-item-jam">
+                <span class="custom-checkbox"></span>
+                джемы
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -312,7 +383,7 @@
           <img class="back-page" src="./images/icon/back.svg" width="6" height="10" alt="back page">
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
+          <a class="pagination-link current">1</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">2</a>
