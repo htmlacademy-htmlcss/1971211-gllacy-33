@@ -10,20 +10,20 @@
     <header class="page-header">
       <div class="page-header-container">
         <a href="index.html" class="logo">
-          <img src="./images/logo.svg" width="137" height="56" alt="логотип Глейси">
+          <img src="images/logo.svg" width="137" height="56" alt="логотип Глейси">
         </a>
         <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a href="catalog.html" class="navigation-link">Каталог</a>
-            </li>
-            <li class="navigation-item">
-              <a href="delivery.html" class="navigation-link">Доставка и оплата</a>
-            </li>
-            <li class="navigation-item">
-              <a href="about.html" class="navigation-link">О компании</a>
-            </li>
-          </ul>
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a href="catalog.html" class="navigation-link">Каталог</a>
+              </li>
+              <li class="navigation-item">
+                <a href="delivery.html" class="navigation-link">Доставка и оплата</a>
+              </li>
+              <li class="navigation-item">
+                <a href="about.html" class="navigation-link">О компании</a>
+              </li>
+            </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
               <a href="tel:88005558628" class="contacts-phone">+7 800 555-86-28 </a>
@@ -32,18 +32,40 @@
               <a href="#" class="navigation-link navigation-link-user search">
                 <img src="./images/icon/search.svg" width="15px" height="15px" alt="Поиск">
                 <span class="visually-hidden">Поиск</span>
+                <div class="search-hover">
+                  <input class="search-hover-in" type="text" placeholder="Поиск по сайту">
+                </div>
               </a>
             </li>
-            <li class="navigation-item">
-              <a href="#" class="navigation-link navigation-link-user">
+            <li class="navigation-item lk-item">
+              <a href="#" class="navigation-link navigation-link-user lk">
                 <img src="./images/icon/in.svg" alt="вход в личный кабинет">
-                Вход
+                <span>Вход</span>
+                <div class="lk-in">
+                  <div class="text-lk-div">
+                    <p class="text-lk">Личный кабинет</p>
+                  </div>
+                  <div class="form-div">
+                    <form class="lk-form" action="https://echo.htmlacademy.ru/" method="post">
+                      <input class="lk-hover-email" type="email" placeholder="email@example.com">
+                      <input class="lk-hover-pass" type="password" placeholder="Пароль">
+                      <button class="button form-button" type="submit">Отправить</button>
+                      <div class="reg-div">
+                        <a class="rem-pas" href="#">Забыли пароль?</a>
+                        <a class="reg" href="#">Регистрация</a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item cart-item">
               <a href="#" class="navigation-link navigation-link-user">
                 <img src="./images/icon/cart.svg" alt="Корзина">
-                Пусто
+                <span>Пусто</span>
+                <div class="cart-index cart">
+                  <p class="cart-text cart-text-index">Ваша корзина пока пуста</p>
+                </div>
               </a>
             </li>
           </ul>
@@ -55,7 +77,7 @@
         <section class="main">
           <h2 class="visually-hidden">Пломбир</h2>
           <div class="slider">
-            <div class="slider-item slider-two slider-three">
+            <div class="slider-item">
               <h2>Нежный пломбир с клубничным джемом</h2>
               <p>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
               <a href="#" class="gift-slider">Заказать</a>
@@ -293,5 +315,30 @@
         </div>
      </div>
     </footer>
+    <div class="modal-container">
+      <div class="madal">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="visually-hidden" for="first-name-inp">Имя и фамилия</label>
+              <input class="first-name" type="text" id="first-name-inp" name="first-name-inp" placeholder="Имя и фамилия">
+            </p>
+            <p class="field-group">
+              <label class="visually-hidden" for="modal-email-inp">Email</label>
+              <input class="modal-email" type="text" id="modal-email-inp" name="modal-email-inp" placeholder="email@example.com">
+            </p>
+            <p class="field-group">
+              <label class="visually-hidden" for="modal-massage-inp">Message</label>
+              <input class="modal-massage" type="text" id="modal-massage-inp" name="modal-massage-inp" placeholder="В свободной форме">
+            </p>
+            <button class="button form-button modal-btn" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
